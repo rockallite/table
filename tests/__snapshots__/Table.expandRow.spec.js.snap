@@ -64,29 +64,6 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
     style={Object {}}>
     <div
       className="rc-table-content">
-<<<<<<< HEAD
-      <div
-        className="rc-table-body"
-        key="bodyTable"
-        onScroll={[Function]}
-        style={Object {}}>
-        <table
-          className=""
-          key="table"
-          style={Object {}}>
-          <colgroup>
-            <col
-              key="name"
-              style={
-                Object {
-                  "minWidth": undefined,
-                  "width": undefined,
-                }
-              } />
-            <col
-              key="age"
-              style={
-=======
       <HeadTable
         columns={
           Array [
@@ -102,7 +79,9 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
             },
           ]
         }
+        fixed={undefined}
         handleBodyScrollLeft={[Function]}
+        key="head"
         tableClassName="" />
       <BodyTable
         columns={
@@ -119,10 +98,13 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
             },
           ]
         }
+        fixed={undefined}
         handleBodyScroll={[Function]}
+        key="body"
         tableClassName="">
         <div
           className="rc-table-body"
+          key="bodyTable"
           onScroll={[Function]}
           style={Object {}}>
           <BaseTable
@@ -133,106 +115,20 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                   "key": "name",
                   "title": "Name",
                 },
->>>>>>> Restructure components
                 Object {
                   "dataIndex": "age",
                   "key": "age",
                   "title": "Age",
                 },
               ]
-<<<<<<< HEAD
-            }>
-            <thead
-              className="rc-table-thead">
-              <tr
-                key="0"
-                style={null}>
-                <th
-                  className=""
-                  key="0">
-                  Name
-                </th>
-                <th
-                  className=""
-                  key="1">
-                  Age
-                </th>
-              </tr>
-            </thead>
-          </TableHeader>
-          <tbody
-            className="rc-table-tbody">
-            <TableRow
-              childrenColumnName="children"
-              className=""
-              columns={
-                Array [
-                  Object {
-                    "dataIndex": "name",
-                    "key": "name",
-                    "title": "Name",
-                  },
-                  Object {
-                    "dataIndex": "age",
-                    "key": "age",
-                    "title": "Age",
-                  },
-                ]
-              }
-              expandIconAsCell={false}
-              expandIconColumnIndex={0}
-              expandRowByClick={false}
-              expandable={[Function]}
-              expanded={true}
-              height={null}
-              hoverKey={0}
-              indent={0}
-              indentSize={15}
-              index={0}
-              key="0"
-              needIndentSpaced={false}
-              onDestroy={[Function]}
-              onExpand={[Function]}
-              onHover={[Function]}
-              onRowClick={[Function]}
-              onRowContextMenu={[Function]}
-              onRowDoubleClick={[Function]}
-              onRowMouseEnter={[Function]}
-              onRowMouseLeave={[Function]}
-              prefixCls="rc-table-row"
-              record={
-                Object {
-                  "age": 27,
-                  "key": 0,
-                  "name": "Lucy",
-                }
-              }
-              store={
-                Object {
-                  "getState": [Function],
-                  "setState": [Function],
-                  "subscribe": [Function],
-                }
-              }
-              visible={true}>
-              <tr
-                className="rc-table-row  rc-table-row-level-0"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onDoubleClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "height": null,
-                  }
-=======
             }
+            fixed={undefined}
             hasBody={true}
             hasHead={true}
             tableClassName="">
             <table
               className=""
+              key="table"
               style={Object {}}>
               <ColGroup
                 columns={
@@ -248,10 +144,11 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                       "title": "Age",
                     },
                   ]
->>>>>>> Restructure components
-                }>
+                }
+                fixed={undefined}>
                 <colgroup>
                   <col
+                    key="name"
                     style={
                       Object {
                         "minWidth": undefined,
@@ -259,6 +156,7 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                       }
                     } />
                   <col
+                    key="age"
                     style={
                       Object {
                         "minWidth": undefined,
@@ -281,17 +179,21 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                       "title": "Age",
                     },
                   ]
-                }>
+                }
+                fixed={undefined}>
                 <thead
                   className="rc-table-thead">
                   <tr
+                    key="0"
                     style={null}>
                     <th
-                      className="">
+                      className=""
+                      key="0">
                       Name
                     </th>
                     <th
-                      className="">
+                      className=""
+                      key="1">
                       Age
                     </th>
                   </tr>
@@ -326,9 +228,7 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                   indent={0}
                   indentSize={15}
                   index={0}
-<<<<<<< HEAD
-                  key="name"
-=======
+                  key="0"
                   needIndentSpaced={false}
                   onDestroy={[Function]}
                   onExpand={[Function]}
@@ -338,7 +238,6 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                   onRowDoubleClick={[Function]}
                   onRowMouseEnter={[Function]}
                   onRowMouseLeave={[Function]}
->>>>>>> Restructure components
                   prefixCls="rc-table-row"
                   record={
                     Object {
@@ -393,6 +292,7 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                       indent={0}
                       indentSize={15}
                       index={0}
+                      key="name"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -443,6 +343,7 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                       indent={0}
                       indentSize={15}
                       index={0}
+                      key="age"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -475,6 +376,7 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                   expandedRow={true}
                   fixed={false}
                   indent={1}
+                  key="0-extra-row"
                   onDestroy={[Function]}
                   onHover={[Function]}
                   onRowClick={[Function]}
@@ -521,7 +423,11 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                           record={undefined} />
                       }
                       indent={1}
-                      prefixCls="rc-table-expanded-row">
+                      indentSize={undefined}
+                      index={undefined}
+                      key="extra-row"
+                      prefixCls="rc-table-expanded-row"
+                      record={undefined}>
                       <td
                         className=""
                         colSpan={2}
@@ -535,7 +441,11 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                           } />
                         <ExpandIcon
                           expandable={false}
-                          prefixCls="rc-table-expanded-row" />
+                          expanded={undefined}
+                          needIndentSpaced={undefined}
+                          onExpand={undefined}
+                          prefixCls="rc-table-expanded-row"
+                          record={undefined} />
                         <p>
                           extra data
                         </p>
@@ -569,11 +479,8 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                   hoverKey={1}
                   indent={0}
                   indentSize={15}
-<<<<<<< HEAD
-                  index={0}
-                  key="age"
-=======
                   index={1}
+                  key="1"
                   needIndentSpaced={false}
                   onDestroy={[Function]}
                   onExpand={[Function]}
@@ -583,7 +490,6 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                   onRowDoubleClick={[Function]}
                   onRowMouseEnter={[Function]}
                   onRowMouseLeave={[Function]}
->>>>>>> Restructure components
                   prefixCls="rc-table-row"
                   record={
                     Object {
@@ -591,62 +497,6 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                       "key": 1,
                       "name": "Jack",
                     }
-<<<<<<< HEAD
-                  }>
-                  <td
-                    className=""
-                    onClick={[Function]}>
-                    27
-                  </td>
-                </TableCell>
-              </tr>
-            </TableRow>
-            <TableRow
-              className=""
-              columns={
-                Array [
-                  Object {
-                    "key": "extra-row",
-                    "render": [Function],
-                  },
-                ]
-              }
-              expandIconColumnIndex={0}
-              expandRowByClick={false}
-              expandable={false}
-              expandedRow={true}
-              fixed={false}
-              indent={1}
-              key="0-extra-row"
-              onDestroy={[Function]}
-              onHover={[Function]}
-              onRowClick={[Function]}
-              onRowContextMenu={[Function]}
-              onRowDoubleClick={[Function]}
-              onRowMouseEnter={[Function]}
-              onRowMouseLeave={[Function]}
-              prefixCls="rc-table-expanded-row"
-              rowKey="0-extra-row"
-              store={
-                Object {
-                  "getState": [Function],
-                  "setState": [Function],
-                  "subscribe": [Function],
-                }
-              }
-              visible={true}>
-              <tr
-                className="rc-table-expanded-row  rc-table-expanded-row-level-1"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onDoubleClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "height": null,
-=======
->>>>>>> Restructure components
                   }
                   store={
                     Object {
@@ -655,30 +505,6 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                       "subscribe": [Function],
                     }
                   }
-<<<<<<< HEAD
-                  expandIcon={
-                    <ExpandIcon
-                      expandable={false}
-                      expanded={undefined}
-                      needIndentSpaced={undefined}
-                      onExpand={undefined}
-                      prefixCls="rc-table-expanded-row"
-                      record={undefined} />
-                  }
-                  indent={1}
-                  indentSize={undefined}
-                  index={undefined}
-                  key="extra-row"
-                  prefixCls="rc-table-expanded-row"
-                  record={undefined}>
-                  <td
-                    className=""
-                    colSpan={2}
-                    onClick={[Function]}>
-                    <span
-                      className="rc-table-expanded-row-indent indent-level-1"
-                      style={
-=======
                   visible={true}>
                   <tr
                     className="rc-table-row  rc-table-row-level-0"
@@ -694,108 +520,11 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                     }>
                     <TableCell
                       column={
->>>>>>> Restructure components
                         Object {
                           "dataIndex": "name",
                           "key": "name",
                           "title": "Name",
                         }
-<<<<<<< HEAD
-                      } />
-                    <ExpandIcon
-                      expandable={false}
-                      expanded={undefined}
-                      needIndentSpaced={undefined}
-                      onExpand={undefined}
-                      prefixCls="rc-table-expanded-row"
-                      record={undefined} />
-                    <p>
-                      extra data
-                    </p>
-                  </td>
-                </TableCell>
-              </tr>
-            </TableRow>
-            <TableRow
-              childrenColumnName="children"
-              className=""
-              columns={
-                Array [
-                  Object {
-                    "dataIndex": "name",
-                    "key": "name",
-                    "title": "Name",
-                  },
-                  Object {
-                    "dataIndex": "age",
-                    "key": "age",
-                    "title": "Age",
-                  },
-                ]
-              }
-              expandIconAsCell={false}
-              expandIconColumnIndex={0}
-              expandRowByClick={false}
-              expandable={[Function]}
-              expanded={false}
-              height={null}
-              hoverKey={1}
-              indent={0}
-              indentSize={15}
-              index={1}
-              key="1"
-              needIndentSpaced={false}
-              onDestroy={[Function]}
-              onExpand={[Function]}
-              onHover={[Function]}
-              onRowClick={[Function]}
-              onRowContextMenu={[Function]}
-              onRowDoubleClick={[Function]}
-              onRowMouseEnter={[Function]}
-              onRowMouseLeave={[Function]}
-              prefixCls="rc-table-row"
-              record={
-                Object {
-                  "age": 28,
-                  "key": 1,
-                  "name": "Jack",
-                }
-              }
-              store={
-                Object {
-                  "getState": [Function],
-                  "setState": [Function],
-                  "subscribe": [Function],
-                }
-              }
-              visible={true}>
-              <tr
-                className="rc-table-row  rc-table-row-level-0"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onDoubleClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "height": null,
-                  }
-                }>
-                <TableCell
-                  column={
-                    Object {
-                      "dataIndex": "name",
-                      "key": "name",
-                      "title": "Name",
-                    }
-                  }
-                  expandIcon={
-                    <ExpandIcon
-                      expandable={[Function]}
-                      expanded={false}
-                      needIndentSpaced={false}
-                      onExpand={[Function]}
-=======
                       }
                       expandIcon={
                         <ExpandIcon
@@ -815,7 +544,7 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                       indent={0}
                       indentSize={15}
                       index={1}
->>>>>>> Restructure components
+                      key="name"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -823,28 +552,6 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                           "key": 1,
                           "name": "Jack",
                         }
-<<<<<<< HEAD
-                      } />
-                  }
-                  indent={0}
-                  indentSize={15}
-                  index={1}
-                  key="name"
-                  prefixCls="rc-table-row"
-                  record={
-                    Object {
-                      "age": 28,
-                      "key": 1,
-                      "name": "Jack",
-                    }
-                  }>
-                  <td
-                    className=""
-                    onClick={[Function]}>
-                    <span
-                      className="rc-table-row-indent indent-level-0"
-                      style={
-=======
                       }>
                       <td
                         className=""
@@ -878,7 +585,6 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                     </TableCell>
                     <TableCell
                       column={
->>>>>>> Restructure components
                         Object {
                           "dataIndex": "age",
                           "key": "age",
@@ -889,6 +595,7 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                       indent={0}
                       indentSize={15}
                       index={1}
+                      key="age"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -897,47 +604,6 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
                           "name": "Jack",
                         }
                       }>
-<<<<<<< HEAD
-                      <span
-                        className="rc-table-row-expand-icon rc-table-row-collapsed"
-                        onClick={[Function]} />
-                    </ExpandIcon>
-                    Jack
-                  </td>
-                </TableCell>
-                <TableCell
-                  column={
-                    Object {
-                      "dataIndex": "age",
-                      "key": "age",
-                      "title": "Age",
-                    }
-                  }
-                  expandIcon={null}
-                  indent={0}
-                  indentSize={15}
-                  index={1}
-                  key="age"
-                  prefixCls="rc-table-row"
-                  record={
-                    Object {
-                      "age": 28,
-                      "key": 1,
-                      "name": "Jack",
-                    }
-                  }>
-                  <td
-                    className=""
-                    onClick={[Function]}>
-                    28
-                  </td>
-                </TableCell>
-              </tr>
-            </TableRow>
-          </tbody>
-        </table>
-      </div>
-=======
                       <td
                         className=""
                         onClick={[Function]}>
@@ -951,7 +617,6 @@ exports[`Table.expand controlled by expandedRowKeys 1`] = `
           </BaseTable>
         </div>
       </BodyTable>
->>>>>>> Restructure components
     </div>
   </div>
 </Table>
@@ -1023,29 +688,6 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
     style={Object {}}>
     <div
       className="rc-table-content">
-<<<<<<< HEAD
-      <div
-        className="rc-table-body"
-        key="bodyTable"
-        onScroll={[Function]}
-        style={Object {}}>
-        <table
-          className=""
-          key="table"
-          style={Object {}}>
-          <colgroup>
-            <col
-              key="name"
-              style={
-                Object {
-                  "minWidth": undefined,
-                  "width": undefined,
-                }
-              } />
-            <col
-              key="age"
-              style={
-=======
       <HeadTable
         columns={
           Array [
@@ -1061,7 +703,9 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
             },
           ]
         }
+        fixed={undefined}
         handleBodyScrollLeft={[Function]}
+        key="head"
         tableClassName="" />
       <BodyTable
         columns={
@@ -1078,10 +722,13 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
             },
           ]
         }
+        fixed={undefined}
         handleBodyScroll={[Function]}
+        key="body"
         tableClassName="">
         <div
           className="rc-table-body"
+          key="bodyTable"
           onScroll={[Function]}
           style={Object {}}>
           <BaseTable
@@ -1092,106 +739,20 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                   "key": "name",
                   "title": "Name",
                 },
->>>>>>> Restructure components
                 Object {
                   "dataIndex": "age",
                   "key": "age",
                   "title": "Age",
                 },
               ]
-<<<<<<< HEAD
-            }>
-            <thead
-              className="rc-table-thead">
-              <tr
-                key="0"
-                style={null}>
-                <th
-                  className=""
-                  key="0">
-                  Name
-                </th>
-                <th
-                  className=""
-                  key="1">
-                  Age
-                </th>
-              </tr>
-            </thead>
-          </TableHeader>
-          <tbody
-            className="rc-table-tbody">
-            <TableRow
-              childrenColumnName="children"
-              className=""
-              columns={
-                Array [
-                  Object {
-                    "dataIndex": "name",
-                    "key": "name",
-                    "title": "Name",
-                  },
-                  Object {
-                    "dataIndex": "age",
-                    "key": "age",
-                    "title": "Age",
-                  },
-                ]
-              }
-              expandIconAsCell={false}
-              expandIconColumnIndex={0}
-              expandRowByClick={false}
-              expandable={[Function]}
-              expanded={false}
-              height={null}
-              hoverKey={0}
-              indent={0}
-              indentSize={15}
-              index={0}
-              key="0"
-              needIndentSpaced={false}
-              onDestroy={[Function]}
-              onExpand={[Function]}
-              onHover={[Function]}
-              onRowClick={[Function]}
-              onRowContextMenu={[Function]}
-              onRowDoubleClick={[Function]}
-              onRowMouseEnter={[Function]}
-              onRowMouseLeave={[Function]}
-              prefixCls="rc-table-row"
-              record={
-                Object {
-                  "age": 27,
-                  "key": 0,
-                  "name": "Lucy",
-                }
-              }
-              store={
-                Object {
-                  "getState": [Function],
-                  "setState": [Function],
-                  "subscribe": [Function],
-                }
-              }
-              visible={true}>
-              <tr
-                className="rc-table-row  rc-table-row-level-0"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onDoubleClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "height": null,
-                  }
-=======
             }
+            fixed={undefined}
             hasBody={true}
             hasHead={true}
             tableClassName="">
             <table
               className=""
+              key="table"
               style={Object {}}>
               <ColGroup
                 columns={
@@ -1207,10 +768,11 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                       "title": "Age",
                     },
                   ]
->>>>>>> Restructure components
-                }>
+                }
+                fixed={undefined}>
                 <colgroup>
                   <col
+                    key="name"
                     style={
                       Object {
                         "minWidth": undefined,
@@ -1218,6 +780,7 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                       }
                     } />
                   <col
+                    key="age"
                     style={
                       Object {
                         "minWidth": undefined,
@@ -1240,17 +803,21 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                       "title": "Age",
                     },
                   ]
-                }>
+                }
+                fixed={undefined}>
                 <thead
                   className="rc-table-thead">
                   <tr
+                    key="0"
                     style={null}>
                     <th
-                      className="">
+                      className=""
+                      key="0">
                       Name
                     </th>
                     <th
-                      className="">
+                      className=""
+                      key="1">
                       Age
                     </th>
                   </tr>
@@ -1285,9 +852,7 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                   indent={0}
                   indentSize={15}
                   index={0}
-<<<<<<< HEAD
-                  key="name"
-=======
+                  key="0"
                   needIndentSpaced={false}
                   onDestroy={[Function]}
                   onExpand={[Function]}
@@ -1297,7 +862,6 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                   onRowDoubleClick={[Function]}
                   onRowMouseEnter={[Function]}
                   onRowMouseLeave={[Function]}
->>>>>>> Restructure components
                   prefixCls="rc-table-row"
                   record={
                     Object {
@@ -1352,6 +916,7 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                       indent={0}
                       indentSize={15}
                       index={0}
+                      key="name"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -1402,6 +967,7 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                       indent={0}
                       indentSize={15}
                       index={0}
+                      key="age"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -1444,11 +1010,8 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                   hoverKey={1}
                   indent={0}
                   indentSize={15}
-<<<<<<< HEAD
-                  index={0}
-                  key="age"
-=======
                   index={1}
+                  key="1"
                   needIndentSpaced={false}
                   onDestroy={[Function]}
                   onExpand={[Function]}
@@ -1458,7 +1021,6 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                   onRowDoubleClick={[Function]}
                   onRowMouseEnter={[Function]}
                   onRowMouseLeave={[Function]}
->>>>>>> Restructure components
                   prefixCls="rc-table-row"
                   record={
                     Object {
@@ -1466,81 +1028,6 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                       "key": 1,
                       "name": "Jack",
                     }
-<<<<<<< HEAD
-                  }>
-                  <td
-                    className=""
-                    onClick={[Function]}>
-                    27
-                  </td>
-                </TableCell>
-              </tr>
-            </TableRow>
-            <TableRow
-              childrenColumnName="children"
-              className=""
-              columns={
-                Array [
-                  Object {
-                    "dataIndex": "name",
-                    "key": "name",
-                    "title": "Name",
-                  },
-                  Object {
-                    "dataIndex": "age",
-                    "key": "age",
-                    "title": "Age",
-                  },
-                ]
-              }
-              expandIconAsCell={false}
-              expandIconColumnIndex={0}
-              expandRowByClick={false}
-              expandable={[Function]}
-              expanded={true}
-              height={null}
-              hoverKey={1}
-              indent={0}
-              indentSize={15}
-              index={1}
-              key="1"
-              needIndentSpaced={false}
-              onDestroy={[Function]}
-              onExpand={[Function]}
-              onHover={[Function]}
-              onRowClick={[Function]}
-              onRowContextMenu={[Function]}
-              onRowDoubleClick={[Function]}
-              onRowMouseEnter={[Function]}
-              onRowMouseLeave={[Function]}
-              prefixCls="rc-table-row"
-              record={
-                Object {
-                  "age": 28,
-                  "key": 1,
-                  "name": "Jack",
-                }
-              }
-              store={
-                Object {
-                  "getState": [Function],
-                  "setState": [Function],
-                  "subscribe": [Function],
-                }
-              }
-              visible={true}>
-              <tr
-                className="rc-table-row  rc-table-row-level-0"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onDoubleClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "height": null,
-=======
->>>>>>> Restructure components
                   }
                   store={
                     Object {
@@ -1588,6 +1075,7 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                       indent={0}
                       indentSize={15}
                       index={1}
+                      key="name"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -1595,28 +1083,6 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                           "key": 1,
                           "name": "Jack",
                         }
-<<<<<<< HEAD
-                      } />
-                  }
-                  indent={0}
-                  indentSize={15}
-                  index={1}
-                  key="name"
-                  prefixCls="rc-table-row"
-                  record={
-                    Object {
-                      "age": 28,
-                      "key": 1,
-                      "name": "Jack",
-                    }
-                  }>
-                  <td
-                    className=""
-                    onClick={[Function]}>
-                    <span
-                      className="rc-table-row-indent indent-level-0"
-                      style={
-=======
                       }>
                       <td
                         className=""
@@ -1650,7 +1116,6 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                     </TableCell>
                     <TableCell
                       column={
->>>>>>> Restructure components
                         Object {
                           "dataIndex": "age",
                           "key": "age",
@@ -1661,6 +1126,7 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                       indent={0}
                       indentSize={15}
                       index={1}
+                      key="age"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -1687,83 +1153,13 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                       },
                     ]
                   }
-<<<<<<< HEAD
-                  expandIcon={null}
-                  indent={0}
-                  indentSize={15}
-                  index={1}
-                  key="age"
-                  prefixCls="rc-table-row"
-                  record={
-                    Object {
-                      "age": 28,
-                      "key": 1,
-                      "name": "Jack",
-                    }
-                  }>
-                  <td
-                    className=""
-                    onClick={[Function]}>
-                    28
-                  </td>
-                </TableCell>
-              </tr>
-            </TableRow>
-            <TableRow
-              className=""
-              columns={
-                Array [
-                  Object {
-                    "key": "extra-row",
-                    "render": [Function],
-                  },
-                ]
-              }
-              expandIconColumnIndex={0}
-              expandRowByClick={false}
-              expandable={false}
-              expandedRow={true}
-              fixed={false}
-              indent={1}
-              key="1-extra-row"
-              onDestroy={[Function]}
-              onHover={[Function]}
-              onRowClick={[Function]}
-              onRowContextMenu={[Function]}
-              onRowDoubleClick={[Function]}
-              onRowMouseEnter={[Function]}
-              onRowMouseLeave={[Function]}
-              prefixCls="rc-table-expanded-row"
-              rowKey="1-extra-row"
-              store={
-                Object {
-                  "getState": [Function],
-                  "setState": [Function],
-                  "subscribe": [Function],
-                }
-              }
-              visible={true}>
-              <tr
-                className="rc-table-expanded-row  rc-table-expanded-row-level-1"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onDoubleClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "height": null,
-                  }
-                }>
-                <TableCell
-                  column={
-=======
                   expandIconColumnIndex={0}
                   expandRowByClick={false}
                   expandable={false}
                   expandedRow={true}
                   fixed={false}
                   indent={1}
+                  key="1-extra-row"
                   onDestroy={[Function]}
                   onHover={[Function]}
                   onRowClick={[Function]}
@@ -1774,37 +1170,12 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                   prefixCls="rc-table-expanded-row"
                   rowKey="1-extra-row"
                   store={
->>>>>>> Restructure components
                     Object {
                       "getState": [Function],
                       "setState": [Function],
                       "subscribe": [Function],
                     }
                   }
-<<<<<<< HEAD
-                  expandIcon={
-                    <ExpandIcon
-                      expandable={false}
-                      expanded={undefined}
-                      needIndentSpaced={undefined}
-                      onExpand={undefined}
-                      prefixCls="rc-table-expanded-row"
-                      record={undefined} />
-                  }
-                  indent={1}
-                  indentSize={undefined}
-                  index={undefined}
-                  key="extra-row"
-                  prefixCls="rc-table-expanded-row"
-                  record={undefined}>
-                  <td
-                    className=""
-                    colSpan={2}
-                    onClick={[Function]}>
-                    <span
-                      className="rc-table-expanded-row-indent indent-level-1"
-                      style={
-=======
                   visible={true}>
                   <tr
                     className="rc-table-expanded-row  rc-table-expanded-row-level-1"
@@ -1820,31 +1191,10 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                     }>
                     <TableCell
                       column={
->>>>>>> Restructure components
                         Object {
                           "key": "extra-row",
                           "render": [Function],
                         }
-<<<<<<< HEAD
-                      } />
-                    <ExpandIcon
-                      expandable={false}
-                      expanded={undefined}
-                      needIndentSpaced={undefined}
-                      onExpand={undefined}
-                      prefixCls="rc-table-expanded-row"
-                      record={undefined} />
-                    <p>
-                      extra data
-                    </p>
-                  </td>
-                </TableCell>
-              </tr>
-            </TableRow>
-          </tbody>
-        </table>
-      </div>
-=======
                       }
                       expandIcon={
                         <ExpandIcon
@@ -1856,7 +1206,11 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                           record={undefined} />
                       }
                       indent={1}
-                      prefixCls="rc-table-expanded-row">
+                      indentSize={undefined}
+                      index={undefined}
+                      key="extra-row"
+                      prefixCls="rc-table-expanded-row"
+                      record={undefined}>
                       <td
                         className=""
                         colSpan={2}
@@ -1870,7 +1224,11 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
                           } />
                         <ExpandIcon
                           expandable={false}
-                          prefixCls="rc-table-expanded-row" />
+                          expanded={undefined}
+                          needIndentSpaced={undefined}
+                          onExpand={undefined}
+                          prefixCls="rc-table-expanded-row"
+                          record={undefined} />
                         <p>
                           extra data
                         </p>
@@ -1883,7 +1241,6 @@ exports[`Table.expand controlled by expandedRowKeys 2`] = `
           </BaseTable>
         </div>
       </BodyTable>
->>>>>>> Restructure components
     </div>
   </div>
 </Table>
@@ -2059,29 +1416,6 @@ exports[`Table.expand expand row by click 1`] = `
     style={Object {}}>
     <div
       className="rc-table-content">
-<<<<<<< HEAD
-      <div
-        className="rc-table-body"
-        key="bodyTable"
-        onScroll={[Function]}
-        style={Object {}}>
-        <table
-          className=""
-          key="table"
-          style={Object {}}>
-          <colgroup>
-            <col
-              key="name"
-              style={
-                Object {
-                  "minWidth": undefined,
-                  "width": undefined,
-                }
-              } />
-            <col
-              key="age"
-              style={
-=======
       <HeadTable
         columns={
           Array [
@@ -2097,7 +1431,9 @@ exports[`Table.expand expand row by click 1`] = `
             },
           ]
         }
+        fixed={undefined}
         handleBodyScrollLeft={[Function]}
+        key="head"
         tableClassName="" />
       <BodyTable
         columns={
@@ -2114,10 +1450,13 @@ exports[`Table.expand expand row by click 1`] = `
             },
           ]
         }
+        fixed={undefined}
         handleBodyScroll={[Function]}
+        key="body"
         tableClassName="">
         <div
           className="rc-table-body"
+          key="bodyTable"
           onScroll={[Function]}
           style={Object {}}>
           <BaseTable
@@ -2128,106 +1467,20 @@ exports[`Table.expand expand row by click 1`] = `
                   "key": "name",
                   "title": "Name",
                 },
->>>>>>> Restructure components
                 Object {
                   "dataIndex": "age",
                   "key": "age",
                   "title": "Age",
                 },
               ]
-<<<<<<< HEAD
-            }>
-            <thead
-              className="rc-table-thead">
-              <tr
-                key="0"
-                style={null}>
-                <th
-                  className=""
-                  key="0">
-                  Name
-                </th>
-                <th
-                  className=""
-                  key="1">
-                  Age
-                </th>
-              </tr>
-            </thead>
-          </TableHeader>
-          <tbody
-            className="rc-table-tbody">
-            <TableRow
-              childrenColumnName="children"
-              className=""
-              columns={
-                Array [
-                  Object {
-                    "dataIndex": "name",
-                    "key": "name",
-                    "title": "Name",
-                  },
-                  Object {
-                    "dataIndex": "age",
-                    "key": "age",
-                    "title": "Age",
-                  },
-                ]
-              }
-              expandIconAsCell={false}
-              expandIconColumnIndex={0}
-              expandRowByClick={false}
-              expandable={[Function]}
-              expanded={true}
-              height={null}
-              hoverKey={0}
-              indent={0}
-              indentSize={15}
-              index={0}
-              key="0"
-              needIndentSpaced={false}
-              onDestroy={[Function]}
-              onExpand={[Function]}
-              onHover={[Function]}
-              onRowClick={[Function]}
-              onRowContextMenu={[Function]}
-              onRowDoubleClick={[Function]}
-              onRowMouseEnter={[Function]}
-              onRowMouseLeave={[Function]}
-              prefixCls="rc-table-row"
-              record={
-                Object {
-                  "age": 27,
-                  "key": 0,
-                  "name": "Lucy",
-                }
-              }
-              store={
-                Object {
-                  "getState": [Function],
-                  "setState": [Function],
-                  "subscribe": [Function],
-                }
-              }
-              visible={true}>
-              <tr
-                className="rc-table-row  rc-table-row-level-0"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onDoubleClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "height": null,
-                  }
-=======
             }
+            fixed={undefined}
             hasBody={true}
             hasHead={true}
             tableClassName="">
             <table
               className=""
+              key="table"
               style={Object {}}>
               <ColGroup
                 columns={
@@ -2243,10 +1496,11 @@ exports[`Table.expand expand row by click 1`] = `
                       "title": "Age",
                     },
                   ]
->>>>>>> Restructure components
-                }>
+                }
+                fixed={undefined}>
                 <colgroup>
                   <col
+                    key="name"
                     style={
                       Object {
                         "minWidth": undefined,
@@ -2254,6 +1508,7 @@ exports[`Table.expand expand row by click 1`] = `
                       }
                     } />
                   <col
+                    key="age"
                     style={
                       Object {
                         "minWidth": undefined,
@@ -2276,17 +1531,21 @@ exports[`Table.expand expand row by click 1`] = `
                       "title": "Age",
                     },
                   ]
-                }>
+                }
+                fixed={undefined}>
                 <thead
                   className="rc-table-thead">
                   <tr
+                    key="0"
                     style={null}>
                     <th
-                      className="">
+                      className=""
+                      key="0">
                       Name
                     </th>
                     <th
-                      className="">
+                      className=""
+                      key="1">
                       Age
                     </th>
                   </tr>
@@ -2321,9 +1580,7 @@ exports[`Table.expand expand row by click 1`] = `
                   indent={0}
                   indentSize={15}
                   index={0}
-<<<<<<< HEAD
-                  key="name"
-=======
+                  key="0"
                   needIndentSpaced={false}
                   onDestroy={[Function]}
                   onExpand={[Function]}
@@ -2333,7 +1590,6 @@ exports[`Table.expand expand row by click 1`] = `
                   onRowDoubleClick={[Function]}
                   onRowMouseEnter={[Function]}
                   onRowMouseLeave={[Function]}
->>>>>>> Restructure components
                   prefixCls="rc-table-row"
                   record={
                     Object {
@@ -2388,6 +1644,7 @@ exports[`Table.expand expand row by click 1`] = `
                       indent={0}
                       indentSize={15}
                       index={0}
+                      key="name"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -2438,6 +1695,7 @@ exports[`Table.expand expand row by click 1`] = `
                       indent={0}
                       indentSize={15}
                       index={0}
+                      key="age"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -2470,6 +1728,7 @@ exports[`Table.expand expand row by click 1`] = `
                   expandedRow={true}
                   fixed={false}
                   indent={1}
+                  key="0-extra-row"
                   onDestroy={[Function]}
                   onHover={[Function]}
                   onRowClick={[Function]}
@@ -2516,7 +1775,11 @@ exports[`Table.expand expand row by click 1`] = `
                           record={undefined} />
                       }
                       indent={1}
-                      prefixCls="rc-table-expanded-row">
+                      indentSize={undefined}
+                      index={undefined}
+                      key="extra-row"
+                      prefixCls="rc-table-expanded-row"
+                      record={undefined}>
                       <td
                         className=""
                         colSpan={2}
@@ -2530,7 +1793,11 @@ exports[`Table.expand expand row by click 1`] = `
                           } />
                         <ExpandIcon
                           expandable={false}
-                          prefixCls="rc-table-expanded-row" />
+                          expanded={undefined}
+                          needIndentSpaced={undefined}
+                          onExpand={undefined}
+                          prefixCls="rc-table-expanded-row"
+                          record={undefined} />
                         <p>
                           extra data
                         </p>
@@ -2564,11 +1831,8 @@ exports[`Table.expand expand row by click 1`] = `
                   hoverKey={1}
                   indent={0}
                   indentSize={15}
-<<<<<<< HEAD
-                  index={0}
-                  key="age"
-=======
                   index={1}
+                  key="1"
                   needIndentSpaced={false}
                   onDestroy={[Function]}
                   onExpand={[Function]}
@@ -2578,7 +1842,6 @@ exports[`Table.expand expand row by click 1`] = `
                   onRowDoubleClick={[Function]}
                   onRowMouseEnter={[Function]}
                   onRowMouseLeave={[Function]}
->>>>>>> Restructure components
                   prefixCls="rc-table-row"
                   record={
                     Object {
@@ -2586,62 +1849,6 @@ exports[`Table.expand expand row by click 1`] = `
                       "key": 1,
                       "name": "Jack",
                     }
-<<<<<<< HEAD
-                  }>
-                  <td
-                    className=""
-                    onClick={[Function]}>
-                    27
-                  </td>
-                </TableCell>
-              </tr>
-            </TableRow>
-            <TableRow
-              className=""
-              columns={
-                Array [
-                  Object {
-                    "key": "extra-row",
-                    "render": [Function],
-                  },
-                ]
-              }
-              expandIconColumnIndex={0}
-              expandRowByClick={false}
-              expandable={false}
-              expandedRow={true}
-              fixed={false}
-              indent={1}
-              key="0-extra-row"
-              onDestroy={[Function]}
-              onHover={[Function]}
-              onRowClick={[Function]}
-              onRowContextMenu={[Function]}
-              onRowDoubleClick={[Function]}
-              onRowMouseEnter={[Function]}
-              onRowMouseLeave={[Function]}
-              prefixCls="rc-table-expanded-row"
-              rowKey="0-extra-row"
-              store={
-                Object {
-                  "getState": [Function],
-                  "setState": [Function],
-                  "subscribe": [Function],
-                }
-              }
-              visible={true}>
-              <tr
-                className="rc-table-expanded-row  rc-table-expanded-row-level-1"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onDoubleClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "height": null,
-=======
->>>>>>> Restructure components
                   }
                   store={
                     Object {
@@ -2650,30 +1857,6 @@ exports[`Table.expand expand row by click 1`] = `
                       "subscribe": [Function],
                     }
                   }
-<<<<<<< HEAD
-                  expandIcon={
-                    <ExpandIcon
-                      expandable={false}
-                      expanded={undefined}
-                      needIndentSpaced={undefined}
-                      onExpand={undefined}
-                      prefixCls="rc-table-expanded-row"
-                      record={undefined} />
-                  }
-                  indent={1}
-                  indentSize={undefined}
-                  index={undefined}
-                  key="extra-row"
-                  prefixCls="rc-table-expanded-row"
-                  record={undefined}>
-                  <td
-                    className=""
-                    colSpan={2}
-                    onClick={[Function]}>
-                    <span
-                      className="rc-table-expanded-row-indent indent-level-1"
-                      style={
-=======
                   visible={true}>
                   <tr
                     className="rc-table-row  rc-table-row-level-0"
@@ -2689,108 +1872,11 @@ exports[`Table.expand expand row by click 1`] = `
                     }>
                     <TableCell
                       column={
->>>>>>> Restructure components
                         Object {
                           "dataIndex": "name",
                           "key": "name",
                           "title": "Name",
                         }
-<<<<<<< HEAD
-                      } />
-                    <ExpandIcon
-                      expandable={false}
-                      expanded={undefined}
-                      needIndentSpaced={undefined}
-                      onExpand={undefined}
-                      prefixCls="rc-table-expanded-row"
-                      record={undefined} />
-                    <p>
-                      extra data
-                    </p>
-                  </td>
-                </TableCell>
-              </tr>
-            </TableRow>
-            <TableRow
-              childrenColumnName="children"
-              className=""
-              columns={
-                Array [
-                  Object {
-                    "dataIndex": "name",
-                    "key": "name",
-                    "title": "Name",
-                  },
-                  Object {
-                    "dataIndex": "age",
-                    "key": "age",
-                    "title": "Age",
-                  },
-                ]
-              }
-              expandIconAsCell={false}
-              expandIconColumnIndex={0}
-              expandRowByClick={false}
-              expandable={[Function]}
-              expanded={false}
-              height={null}
-              hoverKey={1}
-              indent={0}
-              indentSize={15}
-              index={1}
-              key="1"
-              needIndentSpaced={false}
-              onDestroy={[Function]}
-              onExpand={[Function]}
-              onHover={[Function]}
-              onRowClick={[Function]}
-              onRowContextMenu={[Function]}
-              onRowDoubleClick={[Function]}
-              onRowMouseEnter={[Function]}
-              onRowMouseLeave={[Function]}
-              prefixCls="rc-table-row"
-              record={
-                Object {
-                  "age": 28,
-                  "key": 1,
-                  "name": "Jack",
-                }
-              }
-              store={
-                Object {
-                  "getState": [Function],
-                  "setState": [Function],
-                  "subscribe": [Function],
-                }
-              }
-              visible={true}>
-              <tr
-                className="rc-table-row  rc-table-row-level-0"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onDoubleClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "height": null,
-                  }
-                }>
-                <TableCell
-                  column={
-                    Object {
-                      "dataIndex": "name",
-                      "key": "name",
-                      "title": "Name",
-                    }
-                  }
-                  expandIcon={
-                    <ExpandIcon
-                      expandable={[Function]}
-                      expanded={false}
-                      needIndentSpaced={false}
-                      onExpand={[Function]}
-=======
                       }
                       expandIcon={
                         <ExpandIcon
@@ -2810,7 +1896,7 @@ exports[`Table.expand expand row by click 1`] = `
                       indent={0}
                       indentSize={15}
                       index={1}
->>>>>>> Restructure components
+                      key="name"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -2818,28 +1904,6 @@ exports[`Table.expand expand row by click 1`] = `
                           "key": 1,
                           "name": "Jack",
                         }
-<<<<<<< HEAD
-                      } />
-                  }
-                  indent={0}
-                  indentSize={15}
-                  index={1}
-                  key="name"
-                  prefixCls="rc-table-row"
-                  record={
-                    Object {
-                      "age": 28,
-                      "key": 1,
-                      "name": "Jack",
-                    }
-                  }>
-                  <td
-                    className=""
-                    onClick={[Function]}>
-                    <span
-                      className="rc-table-row-indent indent-level-0"
-                      style={
-=======
                       }>
                       <td
                         className=""
@@ -2873,7 +1937,6 @@ exports[`Table.expand expand row by click 1`] = `
                     </TableCell>
                     <TableCell
                       column={
->>>>>>> Restructure components
                         Object {
                           "dataIndex": "age",
                           "key": "age",
@@ -2884,6 +1947,7 @@ exports[`Table.expand expand row by click 1`] = `
                       indent={0}
                       indentSize={15}
                       index={1}
+                      key="age"
                       prefixCls="rc-table-row"
                       record={
                         Object {
@@ -2892,47 +1956,6 @@ exports[`Table.expand expand row by click 1`] = `
                           "name": "Jack",
                         }
                       }>
-<<<<<<< HEAD
-                      <span
-                        className="rc-table-row-expand-icon rc-table-row-collapsed"
-                        onClick={[Function]} />
-                    </ExpandIcon>
-                    Jack
-                  </td>
-                </TableCell>
-                <TableCell
-                  column={
-                    Object {
-                      "dataIndex": "age",
-                      "key": "age",
-                      "title": "Age",
-                    }
-                  }
-                  expandIcon={null}
-                  indent={0}
-                  indentSize={15}
-                  index={1}
-                  key="age"
-                  prefixCls="rc-table-row"
-                  record={
-                    Object {
-                      "age": 28,
-                      "key": 1,
-                      "name": "Jack",
-                    }
-                  }>
-                  <td
-                    className=""
-                    onClick={[Function]}>
-                    28
-                  </td>
-                </TableCell>
-              </tr>
-            </TableRow>
-          </tbody>
-        </table>
-      </div>
-=======
                       <td
                         className=""
                         onClick={[Function]}>
@@ -2946,7 +1969,6 @@ exports[`Table.expand expand row by click 1`] = `
           </BaseTable>
         </div>
       </BodyTable>
->>>>>>> Restructure components
     </div>
   </div>
 </Table>
